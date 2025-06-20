@@ -12,6 +12,15 @@ html, body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: #F7F7F7;
+}
+#cursor{
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
 }
 *::selection{
     color: #fff;
@@ -159,7 +168,65 @@ html, body{
     
 }
 #page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    background-color: #DCC0B4;
+    padding: 0 2vw;
+}
+#page3 #note{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#note #left-side{
+    width: 53%;
+}
+#left-side h2{
+    font-size: 3.6vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 3.4vw;
+}
+#note #right-side{
+    width: 25%;
+    height: 80%;
+    margin-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#right-side h5{
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+#three h5{
+    font-size: 0.8vw;
+    padding-bottom: 0.7vw;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#picture{
+    display: flex;
+    flex-wrap: wrap;
+    /* min-height: 100vh; */
+    margin-top: 2vw;
+}
+.child{
+    height: 91vh;
+    width: 44vw;
+    margin: 2vw;
+}
+.child img{
+    height: 85vh;
+    width: 44vw;
+    /* object-fit: cover; */
+}
+.child h5{
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
 }
