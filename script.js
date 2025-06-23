@@ -70,6 +70,7 @@ function child3Cursor(){
      gsap.to('#cursor', {
     transform: 'translate(-50%, -50%) scale(1)'
      })
+     document.querySelector('#cursor').style.backgroundColor = "#FFF";
 })
 document.querySelector('#child3').addEventListener('mouseleave', function(dets){
      gsap.to('#cursor', {
@@ -97,3 +98,10 @@ document.querySelector('#child4').addEventListener('mouseleave', function(dets){
 })
 }
 child4Cursor()
+
+const gola = document.querySelectorAll(".gola")
+gola.forEach((element) => {
+    element.addEventListener('click', function(){
+    element.style.backgroundColor = "#000";
+    })
+});

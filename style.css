@@ -171,6 +171,7 @@ html, body{
     min-height: 100vh;
     width: 100vw;
     padding: 0 2vw;
+    padding-bottom: 2vw;
 }
 #page3 #note{
     height: 40vh;
@@ -229,4 +230,42 @@ html, body{
     justify-content: center;
     text-align: center;
     font-weight: 400;
+}
+#page4{
+    min-height: 100vh;
+    margin: 2vw;
+    background-color: pink;
+    /* border-top: 1px solid black; */
+}
+#page4 #line{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+#line .msg{
+    font-size: 0.8vw;
+}
+#horizontal{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.block{
+    margin: 2vw;
+    background-color: plum;
+}
+.block .gola{
+    height: 15px;
+    width: 15px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 1vw;
+}
+.block .text{
+    width: 10vw;
+    text-align: left;
+    padding-left: 1vw;
+    font-size: 1.4vw;
 }
